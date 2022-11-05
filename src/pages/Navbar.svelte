@@ -4,7 +4,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <Link class="navbar-brand" to="/">Carlos&Ali</Link>
+    <Link class="navbar-brand" to="/">C&A</Link>
     <button
       class="navbar-toggler"
       type="button"
@@ -33,6 +33,9 @@
           <Link class="nav-link" to="/azores">Azores</Link>
         </li>
       </ul>
+      <button type="submit" class="me-2 btn btn-secondary"
+        >Confirm your presence</button
+      >
     </div>
   </div>
 </nav>

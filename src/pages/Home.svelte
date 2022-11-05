@@ -12,35 +12,41 @@
 <main class="background">
   <div class="main-text">
     <div class="text">
-      <h4>Welcome to</h4>
-      <h1>Carlos & Ali's</h1>
-      <h4>official wedding website</h4>
+      <p class="greeting">Welcome to</p>
+      <p class="names">CARLOS & ALI'S</p>
+      <p class="greeting">official wedding website</p>
     </div>
   </div>
   <div class="main-countdown">
     <div class="countdown">
-      <h4>Coutdown to our big day</h4>
-      <div><span id="days" /><span>days</span></div>
+      <p>Coutdown to our big day</p>
+      <div><span id="days" /><span class="days">days</span></div>
     </div>
   </div>
 </main>
 
 <style>
+  p {
+    margin: 0;
+  }
   .main-text {
-    padding-top: 16em;
+    padding-top: 8em;
   }
 
-  h1 {
-    font-size: 3em;
+  .greeting {
+    font-size: 2em;
   }
 
+  .names {
+    font-size: 90px;
+  }
   .countdown {
-    border-radius: 40%;
-    background-color: grey;
+    border-radius: 20%;
+    background-color: #c6cdc0;
     text-align: center;
     margin: 0 auto;
-    padding: 2em;
-    width: 50%;
+    padding: 1em;
+    width: 35%;
   }
 
   .text {
@@ -48,16 +54,26 @@
   }
 
   #days {
-    font-size: 10em;
+    font-size: 8em;
+  }
+
+  .days {
+    font-size: 1em;
   }
 
   .main-countdown {
     margin: 2em;
   }
 
+  .countdown > p {
+    font-size: 1.5em;
+    width: 40%;
+    margin: 0 auto;
+  }
+
   @media (max-width: 480px) {
     #days {
-      font-size: 2em;
+      font-size: 100px;
     }
 
     .countdown {
@@ -70,5 +86,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 94vh;
+    color: #350101;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: -1px;
   }
 </style>

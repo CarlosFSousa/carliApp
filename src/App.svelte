@@ -1,14 +1,13 @@
 <script>
   // @ts-nocheck
-  import Navbar from './pages/Navbar.svelte';
-  import Home from './pages/Home.svelte';
-  import WhereAndWhen from './pages/WhereAndWhen.svelte';
-  import NotFound from './pages/NotFound.svelte';
-  import Expectations from './pages/Expectations.svelte';
-  import Tips from './pages/Tips.svelte';
+  import { Route, Router } from 'svelte-navigator';
   import Azores from './pages/Azores.svelte';
-  import Admin from './pages/Admin.svelte';
-  import { Router, Route } from 'svelte-navigator';
+  import Expectations from './pages/Expectations.svelte';
+  import Home from './pages/Home.svelte';
+  import Navbar from './pages/Navbar.svelte';
+  import NotFound from './pages/NotFound.svelte';
+  import Tips from './pages/Tips.svelte';
+  import WhereAndWhen from './pages/WhereAndWhen.svelte';
 </script>
 
 <main>
@@ -20,7 +19,6 @@
     <Route path="/tips"><Tips /></Route>
     <Route path="/azores"><Azores /></Route>
     <Route path="/:notfound"><NotFound /></Route>
-    <Route path="/admin"><Admin /></Route>
   </Router>
 </main>
 
